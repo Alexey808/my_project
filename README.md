@@ -73,3 +73,4 @@ git remote add shared https://github.com/Alexey808/test-repo.git
 git fetch [имя удал. сервера] -для получения данных из удалённых проектов
 git pull shared master    -добавляю из github ветки мастера к себе на локалку
 git pull shared laiten    -добавляю из github ветки laiten к себе на локалку
+test
