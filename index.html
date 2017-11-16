@@ -2,7 +2,6 @@
 <html lang="ru">
 
 <head>
-
 	
 	<meta charset="UTF-8"/>
 	<meta description="Краткое описание сайта"/>
@@ -11,7 +10,6 @@
 	<meta content="telephone=no" name="format-detection"/>
 
 	<link rel="stylesheet" type="text/css" href="css/style.css"/>
-	<link rel="shortcut icon" href="img/" type="image/x-icon">
 
 	<title>Моя карточка</title>
 
@@ -21,24 +19,26 @@
 	<div class="main">
 
 
-
+		<!-- header -->
 		<div class="header">
-			<img src="img/my_pictures.jpg" alt="myimage"/>
-			<img src="img/logo.svg" width="80px" height="80px" />
+			<img src="img/cat.jpg" class="i-cat" alt="myimage"/>
 		</div>
+		<!-- /header -->
 
+
+		<!-- content -->
 		<div class="content">
 
-			<h1 class="title">Моя карточка</h1>
+			<h1 class="content__title g-title">Моя карточка</h1>
 
 			<div class="content__text">
-				<p>Меня зовут: <span class="g-blob">Алексей Светинский</span></p>
-				<p>Я работают: <span class="g-blob">Google</span></p>
+				<p>Меня зовут: <span class="g-bold">Алексей Светинский</span></p>
+				<p>Я работают: <span class="g-bold">Google</span></p>
 			</div>
 
 			<div class="content__table">
 
-				<h2 class="title">Восточная Конференция</h2>
+				<h2 class="content__table-title g-title">Восточная Конференция</h2>
 
 				<table>
 					<tr>
@@ -54,39 +54,43 @@
 						<td>69</td>
 					</tr>
 					<tr>
-						<td>13</td>
-						<td>Лада</td>
+						<td class="g-italic">13</td>
+						<td class="g-italic">Лада</td>
 						<td>59</td>
 						<td>69</td>
 					</tr>
 					<tr>
-						<td>12</td>
-						<td>Металлург Нк</td>
-						<td>13</td>
 						<td>14</td>
+						<td>Металлург Нк</td>
+						<td>59</td>
+						<td>55</td>
 					</tr>
 				</table>
+
 			</div>
 
 		</div>
+		<!-- /content -->
 
+
+		<!-- footer -->
 		<div class="footer">
-
 			<div class="footer__soc">
 
-				<h3 class="title">Я в социальных сетях</h3>
+				<h3 class="footer__soc-title g-title">Я в социальных сетях</h3>
 	
 				<div class="footer__soc-link">
 					<ul class="soc-link">
-						<li class="soc-link__vk"><a href="#">Вконтакте</a></li>
-						<li class="soc-link__fs"><a href="#">Фейсбук</a></li>
-						<li class="soc-link__tw"><a href="#">Твиттер</a></li>
+						<li class="soc-link__vk"><a href="https://vk.com">Вконтакте</a></li>
+						<li class="soc-link__fs"><a href="https://ru-ru.facebook.com/">Фейсбук</a></li>
+						<li class="soc-link__tw"><a href="https://twitter.com/">Твиттер</a></li>
 					</ul>
 				</div>
 
 			</div>
-
 		</div>
+		<!-- /footer -->
+
 
 	</div>
 </body>

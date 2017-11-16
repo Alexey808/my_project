@@ -1,0 +1,75 @@
+
+/* --- main -------------------------------------------- */
+body {
+	margin: 0px;
+	padding: 0px;
+	background: url(../img/f-red.jpg) no-repeat top fixed;
+	background-size: cover;
+}
+.main {
+	margin: 8px auto 0;
+	width: 600px;
+	height: 790px;
+	background-color: #ffffff;
+}
+.g-bold {
+	font-weight: bold;
+}
+.i-logo {
+	position: absolute;
+	top: 20px;
+	left: 20px;
+}
+.g-title {
+	text-align: center;
+}
+.g-italic {
+	font-style: italic;
+}
+
+/* --- content ----------------------------------------- */
+.content {
+	text-align: center;
+	padding-bottom: 5px;
+}
+.content__title {
+	color: #ffa500;
+	font-size: 30pt;
+}
+.content__table table {
+	background-color: #eeeeee;
+	width: 286px;
+	height: 112px;
+	margin: 0 auto;
+}
+
+/* --- footer ------------------------------------------ */
+.footer__soc-title {
+	font-size: 15pt;
+	margin-bottom: 10px;
+}
+.soc-link {
+	width: 192px;
+	margin: 0 auto;
+	padding: 0px;
+}
+.soc-link a {
+	color: #008000;
+	display: block;
+}
+.soc-link li {
+	float: left;
+	list-style: none;
+	margin-right: 4px;
+}
+
+.soc-link li:last-child {
+	margin-right: 0;
+}
+.soc-link a:hover {
+	color: #ffa500;
+	margin-top: 1px;
+}
+.soc-link a:active {
+	color: #b33030;
+}
