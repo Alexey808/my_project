@@ -1,7 +1,7 @@
 # my_project
 
 ## Settings PerfectPixel
-1980x1020 => X:446, Y:-1
+1920x1080 => X:446, Y:-1
 
 ## Структура html
 ```
