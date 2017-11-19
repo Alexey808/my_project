@@ -9,7 +9,7 @@ body {
 .main {
 	margin: 8px auto 0;
 	width: 600px;
-	height: 790px;
+	// height: 790px;
 	background-color: #ffffff;
 }
 .g-bold {
@@ -25,7 +25,7 @@ body {
 /* --- content ----------------------------------------- */
 .content {
 	text-align: center;
-	padding-bottom: 5px;
+	padding-bottom: 20px;
 }
 .content__title {
 	color: #ffa500;
@@ -37,24 +37,62 @@ body {
 	height: 112px;
 	margin: 0 auto;
 	border-collapse: collapse;
+	position: relative;
 
 }
-tr td {
-	border: none;
+.content__table-conf tbody {
+	border: 1px solid #ffa500;
 }
-.content__table-conf tr:hover {
+td, th {
+	border: 2px solid #fff;
 	
-	
-	
-	background-color: #ccc;
 }
-.content__table-conf tr:hover:not{
 
-	
-} 
+.content__table-conf tr:not(.table-header):hover{
+	background-color: #cccccc;
+}
+
+.content__table-conf tr:after{
+	content: '';
+	position: absolute;
+	border: 13px solid transparent;
+	border-left: 13px solid #333;
+	margin-top: 1px;
+	visibility: hidden;
+}
+.content__table-conf tr:before{
+	content: '';
+	position: absolute;
+	border: 13px solid transparent;
+	margin-left: -26px;
+	border-right: 13px solid #333;
+	margin-top: 1px;
+	visibility: hidden;
+}
+
+.content__table-conf tr:not(.table-header):hover:after,
+.content__table-conf tr:not(.table-header):hover:before,
+.content__table-conf tr:not(.table-header):focus:after,
+.content__table-conf tr:not(.table-header):focus:before {
+	visibility: visible;
+}
+.content__table-conf tr:not(.table-header):focus{
+	color: #fff;
+	background-color: #803434;
+}
+
+.content__table-conf .t-name{
+	color: #ff7800;
+	text-decoration: none;
+}
+.content__table-conf .t-name:active{
+	margin-top: 1px;
+}
 /* --- footer ------------------------------------------ */
 .footer {
 	height: 70px;
+	margin-bottom: 500px;
+
 }
 .footer__soc-title {
 	font-size: 15pt;
@@ -84,3 +122,24 @@ tr td {
 .soc-link a:active {
 	color: #b33030;
 }
+.soc-link a:visited {
+	color: #f44336;
+}
+
+/* additional */
+.additional {
+
+	display: none;
+	background-color: #fff2e1;
+	width: 480px;
+	margin: 0 auto;
+	padding: 10px;
+}
+.additional__title {
+	text-align: center;
+}
+.additional__cnt {
+	text-align: center;
+}
+
+

@@ -39,38 +39,41 @@
 			<div class="content__table">
 
 				<h2 class="content__table-title g-title">Восточная Конференция</h2>
-
+	
 				<table class="content__table-conf">
-					<tr>
+					<tbody>
+					<tr class="table-header">
 						<th>Место</th>
 						<th>Команды</th>
 						<th>Игр</th>
 						<th>Очков</th>
 					</tr>
-					<tr>
+					<tr href="#additional">
 						<td>12</td>
-						<td>Амур</td>
+						<td><a class="t-name" href="#additional">Амур</a></td>
 						<td>59</td>
 						<td>69</td>
 					</tr>
-					<tr>
+					<tr href="#additional">
 						<td class="g-italic">13</td>
-						<td class="g-italic">Лада</td>
+						<td class="g-italic"><a target="_parent" class="t-name" href="#additional">Лада</a></td>
 						<td>59</td>
 						<td>69</td>
 					</tr>
-					<tr>
+					<tr href="#additional">
 						<td>14</td>
-						<td>Металлург Нк</td>
+						<td><a class="t-name" href="#additional">Металлург Нк</a></td>
 						<td>59</td>
 						<td>55</td>
 					</tr>
+					</tbody>
 				</table>
 
 			</div>
 
 		</div>
 		<!-- /content -->
+
 
 
 		<!-- footer -->
@@ -81,9 +84,9 @@
 	
 				<div class="footer__soc-link">
 					<ul class="soc-link">
-						<li class="soc-link__vk"><a href="https://vk.com">Вконтакте</a></li>
-						<li class="soc-link__fs"><a href="https://ru-ru.facebook.com/">Фейсбук</a></li>
-						<li class="soc-link__tw"><a href="https://twitter.com/">Твиттер</a></li>
+						<li class="soc-link__vk"><a href="#">Вконтакте</a></li>
+						<li class="soc-link__fs"><a href="#">Фейсбук</a></li>
+						<li class="soc-link__tw"><a href="#">Твиттер</a></li>
 					</ul>
 				</div>
 
@@ -91,8 +94,13 @@
 		</div>
 		<!-- /footer -->
 
-
-	</div>
+		<!-- additional -->
+		<div id="additional" class="additional" data-hidden="true">
+			<h2 class="additional__title" target="#additional" data-title="null">Статистика</h2>
+			<div class="additional__cnt"><p data-content="null">Дополнительная информация</p></div>
+		</div>
+		<!-- /additional -->
+	
 </body>
 
 </html>
