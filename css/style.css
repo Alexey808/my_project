@@ -31,63 +31,78 @@ body {
 	color: #ffa500;
 	font-size: 30pt;
 }
-.content__table-conf {
-	background-color: #eeeeee;
+.t-conf {
 	width: 286px;
 	height: 112px;
 	margin: 0 auto;
 	border-collapse: collapse;
 	position: relative;
+	// background-color: #eee;
 
 }
-.content__table-conf tbody {
-	border: 1px solid #ffa500;
-}
-td, th {
-	border: 2px solid #fff;
-	
-}
-
-.content__table-conf tr:not(.table-header):hover{
-	background-color: #cccccc;
+// tr:not(:last-child)
+.t-conf__line {
+	border-bottom: 1px solid green;
+	background-color: green;
+	display: block;
 }
 
-.content__table-conf tr:after{
+.t-conf__header {
+	background-color: #803434;
+	color: #fff;
+
+}
+.content__table-wrap {
+	border: 2px solid #b92b00;
+	width: 286px; width: max-content;
+	margin: 0 auto;
+	padding: 2px;
+}
+
+.t-conf tr:not(.t-conf__header):hover{
+	background-color: rgba(51, 51, 51, 0.2);
+
+}
+
+.t-conf tr:after{
 	content: '';
 	position: absolute;
 	border: 13px solid transparent;
 	border-left: 13px solid #333;
 	margin-top: 1px;
+	margin-left: 2px;
 	visibility: hidden;
 }
-.content__table-conf tr:before{
+.t-conf tr:before{
 	content: '';
 	position: absolute;
 	border: 13px solid transparent;
-	margin-left: -26px;
+	margin-left: -28px;
 	border-right: 13px solid #333;
-	margin-top: 1px;
+
 	visibility: hidden;
 }
 
-.content__table-conf tr:not(.table-header):hover:after,
-.content__table-conf tr:not(.table-header):hover:before,
-.content__table-conf tr:not(.table-header):focus:after,
-.content__table-conf tr:not(.table-header):focus:before {
+.t-conf tr:not(.t-conf__header):hover::after,
+.t-conf tr:not(.t-conf__header):hover::before,
+.t-conf tr:not(.t-conf__header):focus::after,
+.t-conf tr:not(.t-conf__header):focus::before {
 	visibility: visible;
 }
-.content__table-conf tr:not(.table-header):focus{
-	color: #fff;
-	background-color: #803434;
+.t-conf tr:not(.t-conf__header):focus{
+    color: #000;
+    background-color: #ffd4d4;
 }
 
-.content__table-conf .t-name{
+.t-conf .t-conf__name{
 	color: #ff7800;
 	text-decoration: none;
 }
-.content__table-conf .t-name:active{
+.t-conf .t-conf__name:active{
 	margin-top: 1px;
 }
+
+
 /* --- footer ------------------------------------------ */
 .footer {
 	height: 70px;
