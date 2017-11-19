@@ -31,13 +31,27 @@ body {
 	color: #ffa500;
 	font-size: 30pt;
 }
-.content__table table {
+.content__table-conf {
 	background-color: #eeeeee;
 	width: 286px;
 	height: 112px;
 	margin: 0 auto;
-}
+	border-collapse: collapse;
 
+}
+tr td {
+	border: none;
+}
+.content__table-conf tr:hover {
+	
+	
+	
+	background-color: #ccc;
+}
+.content__table-conf tr:hover:not{
+
+	
+} 
 /* --- footer ------------------------------------------ */
 .footer {
 	height: 70px;
