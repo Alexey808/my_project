@@ -146,12 +146,12 @@ body {
 
 /* --- tab --------------------------------------------- */
 .abs-nav {
-  margin: 0 0 10px 0;
+  margin-bottom: 10px;
 }
 .abs-link {
 	margin: 1px;
 	color: #333333;
-	background-color: #ff990040;
+	background-color: rgba(255, 153, 0, 0.25);
 	border-radius: 3px;
 	padding: 2px;
 	text-decoration: none;
@@ -166,15 +166,13 @@ body {
 #one {
   display: block;
 }
-div:target {
+/*как сработает таргет, то показывает этот блок*/
+.tab div:target {
   display: block;
 }
-// div[id*=three]:target {
-//   // display: block;
-// }
-// div[id*=three]:target ~ #three {
-//   // display: block;
-// }
-div[id*=t]:target ~ #one {
+/*выбрать все блоки id которых начинаются на "_" до #one*/
+div[id*=_]:target ~ #one {
   display: none;
 }
+
+
