@@ -10,6 +10,8 @@ body {
 	margin: 8px auto 0;
 	width: 600px;
 	background-color: #ffffff;
+	position: relative;
+	box-shadow: 0 0 10px rgba(255, 255, 255, 1);
 }
 .g-bold {
 	font-weight: bold;
@@ -58,6 +60,7 @@ body {
 	width: 286px; width: max-content;
 	margin: 0 auto;
 	padding: 2px;
+	box-shadow: 0 0 10px rgba(255, 59, 0, 0.5);
 }
 
 .t-conf tr:not(.t-conf__header):hover{
@@ -142,18 +145,24 @@ body {
 
 /* --- additional -------------------------------------- */
 .additional {
-
-	display: none;
+	position: absolute;
 	background-color: #fff2e1;
-	width: 480px;
-	margin: 0 auto;
+	width: 100%;
+	margin: 500px auto 500px;
 	padding: 10px;
+	box-shadow: 0 0 100px rgba(255, 255, 255, 1);
+	border-radius: 3px;
+
 }
 .additional__title {
 	text-align: center;
 }
 .additional__cnt {
 	text-align: center;
+	position: relative;
 }
-
-
+.additional__cnt-btn {
+	position: absolute;
+	top: -70px;
+	right: 0;
+}
