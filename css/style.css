@@ -9,7 +9,6 @@ body {
 .main {
 	margin: 8px auto 0;
 	width: 600px;
-	// height: 790px;
 	background-color: #ffffff;
 }
 .g-bold {
@@ -27,24 +26,26 @@ body {
 	text-align: center;
 	padding-bottom: 20px;
 }
+
 .content__title {
 	color: #ffa500;
 	font-size: 30pt;
 }
+
 .t-conf {
 	width: 286px;
 	height: 112px;
 	margin: 0 auto;
 	border-collapse: collapse;
 	position: relative;
-	// background-color: #eee;
-
+	background-color: #eee;
 }
-// tr:not(:last-child)
-.t-conf__line {
-	border-bottom: 1px solid green;
-	background-color: green;
-	display: block;
+
+.t-conf tr:not(:last-child) {
+	border-bottom: 1px solid #803434;
+}
+.t-conf tr:nth-child(2) {
+	border-top: 2px solid #ffffff;
 }
 
 .t-conf__header {
@@ -79,10 +80,8 @@ body {
 	border: 13px solid transparent;
 	margin-left: -28px;
 	border-right: 13px solid #333;
-
 	visibility: hidden;
 }
-
 .t-conf tr:not(.t-conf__header):hover::after,
 .t-conf tr:not(.t-conf__header):hover::before,
 .t-conf tr:not(.t-conf__header):focus::after,
@@ -141,7 +140,7 @@ body {
 	color: #f44336;
 }
 
-/* additional */
+/* --- additional -------------------------------------- */
 .additional {
 
 	display: none;
