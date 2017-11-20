@@ -31,7 +31,7 @@ body {
 
 .content__title {
 	color: #ffa500;
-	font-size: 30pt;
+	font-size: 40px;
 }
 
 .t-conf {
@@ -112,11 +112,9 @@ body {
 /* --- footer ------------------------------------------ */
 .footer {
 	height: 70px;
-	margin-bottom: 500px;
-
 }
 .footer__soc-title {
-	font-size: 15pt;
+	font-size: 20px;
 	margin-bottom: 10px;
 }
 .soc-link {
@@ -146,31 +144,7 @@ body {
 	color: #f44336;
 }
 
-/* --- additional -------------------------------------- */
-.additional {
-	position: absolute;
-	background-color: #fff2e1;
-	width: 100%;
-	margin: 500px auto 500px;
-	padding: 10px;
-	box-shadow: 0 0 100px rgba(255, 255, 255, 1);
-}
-.additional__title {
-	text-align: center;
-}
-.additional__cnt {
-	text-align: center;
-	position: relative;
-}
-.additional__cnt-btn {
-	position: absolute;
-	top: -70px;
-	right: 0;
-}
-
 /* --- tab --------------------------------------------- */
-.tab {}
-
 .abs-nav {
   margin: 0 0 10px 0;
 }
@@ -186,22 +160,21 @@ body {
 	background-color: #ff8d00;
 	color: #fff;
 }
-.block {
+.hidden {
   display: none;
 }
-
 #one {
   display: block;
 }
 div:target {
   display: block;
 }
-div[id*=three]:target {
-  display: block;
-}
-div[id*=three]:target ~ #three {
-  display: block;
-}
+// div[id*=three]:target {
+//   // display: block;
+// }
+// div[id*=three]:target ~ #three {
+//   // display: block;
+// }
 div[id*=t]:target ~ #one {
   display: none;
 }
