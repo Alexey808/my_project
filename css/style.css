@@ -100,8 +100,12 @@ body {
 	color: #ff7800;
 	text-decoration: none;
 }
-.t-conf .t-conf__name:active{
-	margin-top: 1px;
+.t-conf .t-conf__name:hover {
+	color: #d40000;
+
+}
+.t-conf .t-conf__name:active {
+	text-decoration: underline;
 }
 
 
@@ -134,7 +138,6 @@ body {
 }
 .soc-link a:hover {
 	color: #ffa500;
-	margin-top: 1px;
 }
 .soc-link a:active {
 	color: #b33030;
@@ -151,8 +154,6 @@ body {
 	margin: 500px auto 500px;
 	padding: 10px;
 	box-shadow: 0 0 100px rgba(255, 255, 255, 1);
-	border-radius: 3px;
-
 }
 .additional__title {
 	text-align: center;
@@ -165,4 +166,42 @@ body {
 	position: absolute;
 	top: -70px;
 	right: 0;
+}
+
+/* --- tab --------------------------------------------- */
+.tab {}
+
+.abs-nav {
+  margin: 0 0 10px 0;
+}
+.abs-link {
+	margin: 1px;
+	color: #333333;
+	background-color: #ff990040;
+	border-radius: 3px;
+	padding: 2px;
+	text-decoration: none;
+}
+.abs-link:hover {
+	background-color: #ff8d00;
+	color: #fff;
+}
+.block {
+  display: none;
+}
+
+#one {
+  display: block;
+}
+div:target {
+  display: block;
+}
+div[id*=three]:target {
+  display: block;
+}
+div[id*=three]:target ~ #three {
+  display: block;
+}
+div[id*=t]:target ~ #one {
+  display: none;
 }
