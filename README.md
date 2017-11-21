@@ -15,7 +15,10 @@ main
     content__text
     content__table
       content__table-title
+      content__tab
 
+      tab { ... }
+   
   footer
     footer__soc
       footer__soc-title
@@ -23,5 +26,5 @@ main
         soc-link
           soc-link__vk
           soc-link__fs
-          soc-link__tw
+          soc-link__tw   
 ```
