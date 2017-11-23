@@ -29,13 +29,11 @@ body {
 	text-align: center;
 	padding-bottom: 20px;
 }
-
 .content__title {
 	color: #ffa500;
 	font-size: 40px;
 }
-
-.t-conf {
+.table {
 	width: 286px;
 	height: 112px;
 	margin: 0 auto;
@@ -43,33 +41,28 @@ body {
 	position: relative;
 	background-color: #eee;
 }
-
-.t-conf tr:not(:last-child) {
+.table tr:not(:last-child) {
 	border-bottom: 1px solid #803434;
 }
-.t-conf tr:nth-child(2) {
+.table tr:nth-child(2) {
 	border-top: 2px solid #ffffff;
 }
-
-.t-conf__header {
+.table__header {
 	background-color: #803434;
 	color: #fff;
-
 }
-.content__table-wrap {
+.list-table {
 	border: 2px solid #b92b00;
 	width: 286px; width: max-content;
 	margin: 0 auto;
 	padding: 2px;
 	box-shadow: 0 0 10px rgba(255, 59, 0, 0.5);
 }
-
-.t-conf tr:not(.t-conf__header):hover{
+.table tr:not(.table__header):hover{
 	background-color: rgba(51, 51, 51, 0.2);
 
 }
-
-.t-conf tr:after{
+.table tr:after{
 	content: '';
 	position: absolute;
 	border: 13px solid transparent;
@@ -78,7 +71,7 @@ body {
 	margin-left: 2px;
 	visibility: hidden;
 }
-.t-conf tr:before{
+.table tr:before{
 	content: '';
 	position: absolute;
 	border: 13px solid transparent;
@@ -86,29 +79,27 @@ body {
 	border-right: 13px solid #333;
 	visibility: hidden;
 }
-.t-conf tr:not(.t-conf__header):hover::after,
-.t-conf tr:not(.t-conf__header):hover::before,
-.t-conf tr:not(.t-conf__header):focus::after,
-.t-conf tr:not(.t-conf__header):focus::before {
+.table tr:not(.table__header):hover::after,
+.table tr:not(.table__header):hover::before,
+.table tr:not(.table__header):focus::after,
+.table tr:not(.table__header):focus::before {
 	visibility: visible;
 }
-.t-conf tr:not(.t-conf__header):focus{
+.table tr:not(.table__header):focus{
     color: #000;
     background-color: #ffd4d4;
 }
 
-.t-conf .t-conf__name{
+.table__line-name{
 	color: #ff7800;
 	text-decoration: none;
 }
-.t-conf .t-conf__name:hover {
+.table__line-name:hover {
 	color: #d40000;
-
 }
-.t-conf .t-conf__name:active {
+.table__line-name:active {
 	text-decoration: underline;
 }
-
 
 /* --- footer ------------------------------------------ */
 .footer {
@@ -146,10 +137,10 @@ body {
 }
 
 /* --- tab --------------------------------------------- */
-.abs-nav {
+.list-nav {
   margin-bottom: 10px;
 }
-.abs-link {
+.list-nav__link {
 	margin: 1px;
 	color: #333333;
 	background-color: rgba(255, 153, 0, 0.25);
@@ -158,7 +149,7 @@ body {
 	text-decoration: none;
 	box-shadow: 0 0 5px rgba(255, 59, 0, 0.5);
 }
-.abs-link:hover {
+.list-nav__link:hover {
 	background-color: #ff8d00;
 	color: #fff;
 }
@@ -176,7 +167,6 @@ body {
 div[id*=_]:target ~ #one {
   	display: none;
 }
-
 
 /* --- auth -------------------------------------------- */
 .auth {
@@ -238,7 +228,5 @@ div[id*=_]:target ~ #one {
 	cursor: pointer;
 	box-shadow: 0 0 5px rgba(255, 59, 0, 0.5);
 	font-size: 12px;
-	
-
 }
 

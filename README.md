@@ -57,16 +57,18 @@ tab
         t-conf
           t-conf__header
           t-conf__line
----
+
+
+
+
+
 tab
   tab__list
-
     list-nav
       list-nav__link
-
-    list-wrap
+    list-table
       table
         table__header
         table__line
-
+          table__line-name
 ```
