@@ -180,11 +180,11 @@ div[id*=_]:target ~ #one {
 /* --- --- */
 .auth-wrap {
 	margin: 20px auto 10px;
+	color: #333;
 }
 .auth {
     text-align: center;
-    /* width: 100%; */
-     padding: 20px 40px; 
+    padding: 20px; 
     border: 1px solid #ffa500;
     border-radius: 5px;
     background-color: #fff4e5;
@@ -223,6 +223,7 @@ div[id*=_]:target ~ #one {
 .auth__pswd-label, .auth__login-label {
 	position: absolute;
 	left: 0px;
+	font-weight: bold;
 
 }
 .auth__login-input, .auth__pswd-input {
@@ -232,10 +233,31 @@ div[id*=_]:target ~ #one {
     border: 1px solid orange;
 }
 .auth__btn-button {
+    position: absolute;
     padding: 5px;
     width: 96px;
     border: 1px solid #ffa500;
     border-radius: 3px;
     background-color: #ffd588;
     color: #333;
+    left: 0px;
+}
+.auth__btn-button:hover {
+	cursor: pointer;
+    background-color: #ff8d00;
+    color: #fff;
+	
+}
+.auth__btn-button:active {
+	cursor: pointer;
+	box-shadow: 0 0 5px rgba(255, 59, 0, 0.5);
+	font-size: 12px;
+	
+
+}
+.auth__btn {
+	position: relative;
+    height: 27px;
+    width: 92px;
+    margin: 0 auto;
 }
