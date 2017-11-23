@@ -3,6 +3,7 @@
 body {
 	margin: 0px;
 	padding: 0px;
+	background-color: #79483a;
 	background: url(../img/f-red.jpg) no-repeat top fixed;
 	background-size: cover;
 }
@@ -113,34 +114,34 @@ body {
 .footer {
 	height: 70px;
 }
-.footer__soc-title {
+.soc__title {
 	font-size: 20px;
 	margin-bottom: 10px;
 }
-.soc-link {
+.soc__link {
 	width: 194px; /*fix +2px для IE*/
 	margin: 0 auto;
 	padding: 0 0 0 2px; /*fix для IE*/
 }
-.soc-link a {
+.soc__link a {
 	color: #008000;
 	display: block;
 }
-.soc-link li {
+.soc__link li {
 	float: left;
 	list-style: none;
 	margin-right: 4px;
 }
-.soc-link li:last-child {
+.soc__link li:last-child {
 	margin-right: 0;
 }
-.soc-link a:hover {
+.soc__link a:hover {
 	color: #ffa500;
 }
-.soc-link a:active {
+.soc__link a:active {
 	color: #b33030;
 }
-.soc-link a:visited {
+.soc__link a:visited {
 	color: #f44336;
 }
 
@@ -177,12 +178,12 @@ div[id*=_]:target ~ #one {
 }
 
 
-/* --- --- */
-.auth-wrap {
+/* --- auth -------------------------------------------- */
+.auth {
 	margin: 20px auto 10px;
 	color: #333;
 }
-.auth {
+.auth__form {
     text-align: center;
     padding: 20px; 
     border: 1px solid #ffa500;
@@ -191,48 +192,34 @@ div[id*=_]:target ~ #one {
     box-shadow: 0 0 5px rgba(255, 59, 0, 0.5);
     width: 250px;
     margin: 0 auto;
-
-
 }
-// .wrap {
-//     width: 350px;
-//     /* text-align: center; */
-//     margin: 0 auto;
-//     /* padding: 5px 0px; */
-//     border: 1px solid green;
-//     height: 90px;
-//     border: 1px solid #ffa500;
-//     border-radius: 5px;
-//     background-color: #fff4e5;
-//     box-shadow: 0 0 5px rgba(255, 59, 0, 0.5);
-// }
-// .auth[class*=auth__] {
-// 	position: relative;
-// }
-.auth div:not(:last-child) {
+.auth__form div:not(:last-child) {
 	margin-bottom: 10px;
 }
-.auth__login, .auth__pswd {
+.login, .pswd {
 	position: relative;
 	width: 100%;
 	height: 20px;
 	margin-bottom: 10px;
 }
-
-
-.auth__pswd-label, .auth__login-label {
+.pswd__label, .login__label {
 	position: absolute;
 	left: 0px;
 	font-weight: bold;
-
 }
-.auth__login-input, .auth__pswd-input {
+.login__input, .pswd__input {
 	position: absolute;
     right: 0px;
     border-radius: 3px;
     border: 1px solid orange;
 }
-.auth__btn-button {
+.submit {
+	position: relative;
+    height: 27px;
+    width: 92px;
+    margin: 0 auto;
+}
+.submit__btn {
     position: absolute;
     padding: 5px;
     width: 96px;
@@ -242,22 +229,16 @@ div[id*=_]:target ~ #one {
     color: #333;
     left: 0px;
 }
-.auth__btn-button:hover {
+.submit__btn:hover {
 	cursor: pointer;
     background-color: #ff8d00;
     color: #fff;
-	
 }
-.auth__btn-button:active {
+.submit__btn:active {
 	cursor: pointer;
 	box-shadow: 0 0 5px rgba(255, 59, 0, 0.5);
 	font-size: 12px;
 	
 
 }
-.auth__btn {
-	position: relative;
-    height: 27px;
-    width: 92px;
-    margin: 0 auto;
-}
+

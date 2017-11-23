@@ -25,29 +25,27 @@
 		</div>
 		<!-- /header -->
 
-		<div class="auth-wrap">
-			
-				<form action="" class="auth" method="post">
+		<!-- auth -->
+		<div class="auth">
+			<form action="" class="auth__form" method="post">
 
-					<div class="auth__login">
-						<label for="" class="auth__login-label">Логин</label>
-						<input id="auth__login-input" class="auth__login-input" type="text" name="login" placeholder=" Логин" autofocus>
-					</div>
+				<div class="login">
+					<label for="auth__login-input" class="login__label">Логин</label>
+					<input id="auth__login-input" class="login__input" type="text" name="login" placeholder=" Логин" autofocus required>
+				</div>
 
-					<div class="auth__pswd">
-						<label for="auth__pswd" class="auth__pswd-label">Пароль</label>
-						<input id="auth__pswd-input" class="auth__pswd-input" type="password" name="pswd" placeholder=" Пароль">
-					</div>
+				<div class="pswd">
+					<label for="auth__pswd-input" class="pswd__label">Пароль</label>
+					<input id="auth__pswd-input" class="pswd__input" type="password" name="pswd" placeholder=" Пароль" required>
+				</div>
 
-					
-					<div class="auth__btn">
-						<button type="submit" class="auth__btn-button">Вход</button>
-						<!-- <input type="button" class="auth__btn-input" value="Войти"> -->
-					</div>
-					
-				</form>
-			
+				<div class="submit">
+					<button type="submit" class="submit__btn">Вход</button>
+				</div>
+				
+			</form>
 		</div>
+		<!-- /auth -->
 
 		<!-- content -->
 		<div class="content">
@@ -68,12 +66,12 @@
 
 						<!-- 3 вкладка -->
 						<div id="_three" class="abs hidden">
-						  <div class="abs-nav">
-					    	<a class="abs-link" href="#one">Таблица №1</a>
-					    	<a class="abs-link" href="#_two">Таблица №2</a>
-					    	<b><a class="abs-link" href="#_three">Таблица №3</a></b>
+						  	<div class="abs-nav">
+						    	<a class="abs-link" href="#one">Таблица №1</a>
+						    	<a class="abs-link" href="#_two">Таблица №2</a>
+						    	<b><a class="abs-link" href="#_three">Таблица №3</a></b>
 							</div>
-				    	<div class="abs">
+				    		<div class="abs">
 								<div class="content__table-wrap">
 									<table class="t-conf">
 										<tbody>
@@ -104,17 +102,17 @@
 										</tbody>
 									</table>
 								</div>
-					    </div>
+					    	</div>
 						</div>
 
 						<!-- 2 вкладка -->
 						<div id="_two" class="abs hidden">
-					  	<div class="abs-nav">
-						    <a class="abs-link" href="#one">Таблица №1</a>
-						    <b><a class="abs-link" href="#_two">Таблица №2</a></b>
-						    <a class="abs-link" href="#_three">Таблица №3</a>
+						  	<div class="abs-nav">
+							   <a class="abs-link" href="#one">Таблица №1</a>
+							   <b><a class="abs-link" href="#_two">Таблица №2</a></b>
+							   <a class="abs-link" href="#_three">Таблица №3</a>
 							</div>
-					    <div class="abs">
+					   	<div class="abs">
 								<div class="content__table-wrap">
 									<table class="t-conf">
 										<tbody>
@@ -145,7 +143,7 @@
 										</tbody>
 									</table>
 								</div>
-					    </div>
+					    	</div>
 						</div>
 
 						<!-- 1 вкладка 
@@ -153,12 +151,12 @@
 						2) ID должен начинатся не с "_" остальные наоборот только с "_".
 						-->
 						<div id="one" class="abs hidden">
-					  	<div class="abs-nav">
-					    	<b><a class="abs-link" href="#one">Таблица №1</a></b>
-					    	<a class="abs-link" href="#_two">Таблица №2</a>
-					    	<a class="abs-link" href="#_three">Таблица №3</a>
+					  		<div class="abs-nav">
+						    	<b><a class="abs-link" href="#one">Таблица №1</a></b>
+						    	<a class="abs-link" href="#_two">Таблица №2</a>
+						    	<a class="abs-link" href="#_three">Таблица №3</a>
 							</div>
-					    <div class="abs">
+					   	<div class="abs">
 								<div class="content__table-wrap">
 									<table class="t-conf">
 										<tbody>
@@ -189,7 +187,7 @@
 										</tbody>
 									</table>
 								</div>
-					    </div>
+					    	</div>
 						</div>
 
 
@@ -205,14 +203,12 @@
 		<!-- footer -->
 		<div class="footer">
 			<div class="footer__soc">
-
-				<h3 class="footer__soc-title g-title">Я в социальных сетях</h3>
-	
-				<div class="footer__soc-link">
-					<ul class="soc-link">
-						<li class="soc-link__vk"><a href="#">Вконтакте</a></li>
-						<li class="soc-link__fs"><a href="#">Фейсбук</a></li>
-						<li class="soc-link__tw"><a href="#">Твиттер</a></li>
+				<div class="soc">
+					<h3 class="soc__title g-title">Я в социальных сетях</h3>
+					<ul class="soc__link">
+						<li class="soc__link-vk"><a href="#">Вконтакте</a></li>
+						<li class="soc__link-fs"><a href="#">Фейсбук</a></li>
+						<li class="soc__link-tw "><a href="#">Твиттер</a></li>
 					</ul>
 				</div>
 
@@ -221,6 +217,7 @@
 		<!-- /footer -->
 
 	</div>
+
 
 </body>
 </html>
