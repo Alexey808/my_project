@@ -5,7 +5,6 @@
 
 body {
 	background-color: #eee;
-
 }
 .item__user {
 	display: block;
@@ -42,17 +41,13 @@ body {
 	font-weight: bold;
 	text-align: center;
 }
-
 .wrap {
-	// height: 100vh;
 	display: flex;
 	width: 940px;
 	margin: 220px auto;
 
 }
 .item__footer {
-	
-	
 	background-color: #33c1e3;
 	margin: 0 auto;
 	border-radius: 0 0 10px 10px;
