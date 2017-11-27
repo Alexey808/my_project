@@ -1,5 +1,7 @@
 # my_project
 
+homework1 -> html + css + table + bem + pseudo + form
+
 ## Структура html
 ```
 main
