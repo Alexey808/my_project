@@ -1,45 +1,9 @@
 # my_project
 
-## Структура html
-```
-main
+**hw1** -> html + css + table + bem + pseudo + form
 
-  header
-    i-cat
+- [https://alexey808.github.io/homework/hw1](https://alexey808.github.io/homework/hw1)
 
-  auth
-    auth__form
-      login
-        login__label
-        login__input
-      pswd
-        pswd__label
-        pswd__input
-      submit
-        submit__btn
+**hw2** -> psd1
 
-  content
-    content__title
-    content__text
-    content__table
-      content__table-title
-      content__tab
-      tab
-        tab__list
-          list-nav
-            list-nav__link
-          list-table
-            table
-              table__header
-              table__line
-                table__line-name
-   
-  footer
-    footer__soc
-      soc
-        soc__title
-        soc__link
-          soc__link-vk
-          soc__link-fs
-          soc__link-tw  
-```
+- [https://alexey808.github.io/homework/hw2](https://alexey808.github.io/homework/hw1)
